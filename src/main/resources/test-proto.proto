@@ -1,0 +1,9 @@
+syntax = "proto3";
+package tutorial;
+option java_package = "com.example";
+option java_outer_classname = "PersonProto";
+
+message Person {
+   int32 id = 1;
+   string username = 2;
+}
