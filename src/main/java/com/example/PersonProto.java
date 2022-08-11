@@ -15,7 +15,7 @@ public final class PersonProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface PersonOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:tutorial.Person)
+      // @@protoc_insertion_point(interface_extends:demo.Person)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -34,11 +34,11 @@ public final class PersonProto {
         getUsernameBytes();
   }
   /**
-   * Protobuf type {@code tutorial.Person}
+   * Protobuf type {@code demo.Person}
    */
   public  static final class Person extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:tutorial.Person)
+      // @@protoc_insertion_point(message_implements:demo.Person)
       PersonOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Person.newBuilder() to construct.
@@ -106,13 +106,13 @@ public final class PersonProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.PersonProto.internal_static_tutorial_Person_descriptor;
+      return com.example.PersonProto.internal_static_demo_Person_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.PersonProto.internal_static_tutorial_Person_fieldAccessorTable
+      return com.example.PersonProto.internal_static_demo_Person_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.example.PersonProto.Person.class, com.example.PersonProto.Person.Builder.class);
     }
@@ -327,21 +327,21 @@ public final class PersonProto {
       return builder;
     }
     /**
-     * Protobuf type {@code tutorial.Person}
+     * Protobuf type {@code demo.Person}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:tutorial.Person)
+        // @@protoc_insertion_point(builder_implements:demo.Person)
         com.example.PersonProto.PersonOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.PersonProto.internal_static_tutorial_Person_descriptor;
+        return com.example.PersonProto.internal_static_demo_Person_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.PersonProto.internal_static_tutorial_Person_fieldAccessorTable
+        return com.example.PersonProto.internal_static_demo_Person_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.example.PersonProto.Person.class, com.example.PersonProto.Person.Builder.class);
       }
@@ -374,7 +374,7 @@ public final class PersonProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.PersonProto.internal_static_tutorial_Person_descriptor;
+        return com.example.PersonProto.internal_static_demo_Person_descriptor;
       }
 
       @java.lang.Override
@@ -587,10 +587,10 @@ public final class PersonProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:tutorial.Person)
+      // @@protoc_insertion_point(builder_scope:demo.Person)
     }
 
-    // @@protoc_insertion_point(class_scope:tutorial.Person)
+    // @@protoc_insertion_point(class_scope:demo.Person)
     private static final com.example.PersonProto.Person DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.example.PersonProto.Person();
@@ -628,10 +628,10 @@ public final class PersonProto {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_tutorial_Person_descriptor;
+    internal_static_demo_Person_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_tutorial_Person_fieldAccessorTable;
+      internal_static_demo_Person_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -641,9 +641,9 @@ public final class PersonProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020test-proto.proto\022\010tutorial\"&\n\006Person\022\n" +
-      "\n\002id\030\001 \001(\005\022\020\n\010username\030\002 \001(\tB\032\n\013com.exam" +
-      "pleB\013PersonProtob\006proto3"
+      "\n\020test-proto.proto\022\004demo\"&\n\006Person\022\n\n\002id" +
+      "\030\001 \001(\005\022\020\n\010username\030\002 \001(\tB\032\n\013com.exampleB" +
+      "\013PersonProtob\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -657,11 +657,11 @@ public final class PersonProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_tutorial_Person_descriptor =
+    internal_static_demo_Person_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_tutorial_Person_fieldAccessorTable = new
+    internal_static_demo_Person_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_tutorial_Person_descriptor,
+        internal_static_demo_Person_descriptor,
         new java.lang.String[] { "Id", "Username", });
   }
 

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package tutorial;
+package demo;
 option java_package = "com.example";
 option java_outer_classname = "PersonProto";
 
