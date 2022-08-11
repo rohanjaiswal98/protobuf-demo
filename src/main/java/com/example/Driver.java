@@ -3,10 +3,12 @@ package com.example;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
 import static com.example.PersonProto.Person;
 
 public class Driver {
-    public static void main(String[] args) {
+
+    public static void write() {
         Person person = Person.newBuilder()
                 .setId(1)
                 .setUsername("John Doe")
@@ -17,7 +19,9 @@ public class Driver {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+    }
 
+    public static void read() {
         try (FileInputStream in = new FileInputStream("/home/rohans-ubuntu/Desktop/proto-out")) {
             Person.Builder personBuilder = Person.newBuilder();
             Person inPerson = personBuilder.mergeFrom(in).build();
@@ -26,5 +30,13 @@ public class Driver {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public static void main(String[] args) {
+        if (args.length > 0)
+            if (args[0].contentEquals("write"))
+                write();
+            else
+                read();
     }
 }
